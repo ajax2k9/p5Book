@@ -1,6 +1,6 @@
 # p5Book
 
-## what is p5TutorialBook?
+## what is p5Book?
 
 it is a single file, Book.js, that provides an easy way to add a multipage book, with pictures!
 
