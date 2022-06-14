@@ -46,7 +46,7 @@ class Book{
         let page_size = this.pages.length;
         if(page_size > 0 && this.currPage < page_size) this.pages[this.currPage].Draw();
     
-        textAlign(CENTER);
+        textAlign(CENTER,CENTER);
         textSize(18);
         noStroke();
         fill(255,255,255);
@@ -77,7 +77,7 @@ class Page{
         textAlign(CENTER);
         textSize(22);
         text(this.title,this.x ,this.y + 30);
-        textAlign(LEFT);
+        textAlign(LEFT,TOP);
         text(this.body,this.x-550/2 ,this.y + 260,550,300);
         
         if(this.icon != undefined){
@@ -113,7 +113,7 @@ class BookButton{
     Draw(){
         noStroke();
         fill(255,255,255);
-        textAlign(CENTER);
+        textAlign(CENTER,CENTER);
         noStroke();
         textSize(22);
         text(this.text,this.x ,this.y);
